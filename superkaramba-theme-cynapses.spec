@@ -1,7 +1,7 @@
 %define		theme	cynapses
 
-Summary:	superkaramba - synapses theme
-Summary(pl):	superkaramba - motyw synapses
+Summary:	superkaramba - cynapses theme
+Summary(pl):	superkaramba - motyw cynapses
 Name:		superkaramba-theme-%{theme}
 Version:	1
 Release:	0.1
@@ -14,10 +14,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-cenapses theme for superkaramba.
+cynapses theme for superkaramba.
 
 %description -l pl
-Motyw synapses do superkaramba.
+Motyw cynapses do superkaramba.
 
 %prep
 %setup -q -c
