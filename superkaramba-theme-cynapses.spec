@@ -9,6 +9,7 @@ License:	GPL v2
 Group:		Themes
 Source0:	11405-cynapses_karamba.tar.bz2
 # Source0-md5:	450fdaab9af75def0d87e920492b284f
+URL:		http://www.kde-look.org/content/show.php?content=11405
 Requires:	superkaramba
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
