@@ -1,3 +1,4 @@
+
 %define		theme	cynapses
 
 Summary:	superkaramba - cynapses theme
