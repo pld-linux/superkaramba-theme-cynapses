@@ -1,0 +1,23 @@
+diff -urN cynapses_karamba/scripts/osinfo.sh cynapses_karamba.new/scripts/osinfo.sh
+--- cynapses_karamba/scripts/osinfo.sh	2004-03-14 14:43:04.000000000 +0100
++++ cynapses_karamba.new/scripts/osinfo.sh	2005-02-15 12:52:00.301024856 +0100
+@@ -9,5 +9,6 @@
+ test -r "/etc/mandrake-release" && DISTRO=`cat /etc/mandrake-release`
+ test -r "/etc/gentoo-release" && DISTRO=`cat /etc/gentoo-release`
+ test -r "/etc/turbolinux-release" && DISTRO=`cat /etc/turbolinux-release`
++test -r "/etc/pld-release" && DISTRO=`cat /etc/pld-release`
+ 
+ echo "$DISTRO"
+\ Brak znaku nowej linii na koñcu pliku
+diff -urN cynapses_karamba/sys_mon.theme cynapses_karamba.new/sys_mon.theme
+--- cynapses_karamba/sys_mon.theme	2004-03-23 22:37:58.000000000 +0100
++++ cynapses_karamba.new/sys_mon.theme	2005-02-15 12:50:42.264888152 +0100
+@@ -33,7 +33,7 @@
+ clickarea x=0 y=0 w=64 h=64 onclick="kinfocenter"
+ 
+ text x=75 y=30 sensor=program program="echo ${USER}@`hostname`" line=1 color=0,0,0 fontsize=10 font="nimbus sans l"
+-text x=75 y=45 sensor=program program="sh /path/to/osinfo.sh" line=1 color=0,0,0 fontsize=10 font="nimbus sans l"
++text x=75 y=45 sensor=program program="/usr/share/themes/superkaramba/cynapses_karamba/scripts/osinfo.sh" line=1 color=0,0,0 fontsize=10 font="nimbus sans l"
+ text x=75 y=60 value="Kernel" color=0,0,0 fontsize=10 font="nimbus sans l"
+ text x=110 y=60 sensor=program program="uname -r" line=1 color=0,0,0 fontsize=10 font="nimbus sans l"
+ text x=75 y=75 sensor=program program="kde-config --version | grep KDE" line=1 color=0,0,0 fontsize=10 font="nimbus sans l"
