@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 cynapses theme for superkaramba.
 
 %description -l pl
-Motyw cynapses do superkaramba.
+Motyw cynapses do superkaramby.
 
 %prep
 %setup -q -c
