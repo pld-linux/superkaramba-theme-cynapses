@@ -5,11 +5,12 @@ Summary:	superkaramba - cynapses theme
 Summary(pl):	superkaramba - motyw cynapses
 Name:		superkaramba-theme-%{theme}
 Version:	1
-Release:	0.1
+Release:	0.2
 License:	GPL 
 Group:		Themes
 Source0:	11405-cynapses_karamba.tar.bz2
 # Source0-md5:	450fdaab9af75def0d87e920492b284f
+Patch0:         %{name}-osinfo.patch
 URL:		http://www.kde-look.org/content/show.php?content=11405
 Requires:	superkaramba
 BuildArch:	noarch
@@ -23,6 +24,7 @@ Motyw cynapses do superkaramby.
 
 %prep
 %setup -q -c
+%patch0 -p0
 
 %install
 rm -rf $RPM_BUILD_ROOT
