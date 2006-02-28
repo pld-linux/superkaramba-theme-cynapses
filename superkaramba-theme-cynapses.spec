@@ -6,11 +6,11 @@ Summary(pl):	superkaramba - motyw cynapses
 Name:		superkaramba-theme-%{theme}
 Version:	1
 Release:	0.4
-License:	GPL 
+License:	GPL
 Group:		Themes
 Source0:	11405-cynapses_karamba.tar.bz2
 # Source0-md5:	450fdaab9af75def0d87e920492b284f
-Patch0:         %{name}-osinfo.patch
+Patch0:		%{name}-osinfo.patch
 URL:		http://www.kde-look.org/content/show.php?content=11405
 Requires:	issue
 Requires:	lm_sensors
@@ -33,7 +33,7 @@ rm -rf $RPM_BUILD_ROOT
 
 install -d $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/cynapses_karamba/{font,img,scripts}  \
     	$RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/cynapses_karamba/img/icons
-		
+
 install cynapses_karamba/*.png $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/cynapses_karamba/
 install cynapses_karamba/*.theme $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/cynapses_karamba/
 install cynapses_karamba/font/* $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/cynapses_karamba/font
@@ -44,7 +44,7 @@ install cynapses_karamba/scripts/* $RPM_BUILD_ROOT%{_datadir}/themes/superkaramb
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files 
+%files
 %defattr(644,root,root,755)
 %dir %{_datadir}/themes/superkaramba/cynapses_karamba
 %dir %{_datadir}/themes/superkaramba/cynapses_karamba/font
