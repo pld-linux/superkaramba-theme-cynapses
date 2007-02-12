@@ -2,7 +2,7 @@
 %define		theme	cynapses
 
 Summary:	superkaramba - cynapses theme
-Summary(pl):	superkaramba - motyw cynapses
+Summary(pl.UTF-8):   superkaramba - motyw cynapses
 Name:		superkaramba-theme-%{theme}
 Version:	1
 Release:	0.4
@@ -21,7 +21,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 cynapses theme for superkaramba.
 
-%description -l pl
+%description -l pl.UTF-8
 Motyw cynapses do superkaramby.
 
 %prep
